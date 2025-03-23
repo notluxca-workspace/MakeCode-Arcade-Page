@@ -31,6 +31,7 @@ iframe {
 }
 
 footer {
+    text-align: center;
     padding: 20px;
     font-size: 1.2em;
     background-color: #1b263b;
