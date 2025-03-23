@@ -25,8 +25,8 @@ main {
 }
 
 iframe {
-    width: 800px;
-    height: 600px;
+    width: 100%;  /* Ensure the iframe width is 100% of its container */
+    height: 100%;  /* Allow it to scale with aspect ratio */
     border: none;
 }
 
@@ -34,4 +34,24 @@ footer {
     padding: 20px;
     font-size: 1.2em;
     background-color: #1b263b;
+}
+
+/* Add media queries to handle smartphones (up to 600px wide) */
+@media (max-width: 600px) {
+    main {
+        margin: 20px auto;
+    }
+    
+    header img {
+        width: 300px;  /* Resize the logo on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em;  /* Reduce heading size for smaller screens */
+    }
+    
+    iframe {
+        width: 100%;   /* Ensure full width inside container */
+        height: 60vw;  /* Set proportional height based on viewport width */
+    }
 }
